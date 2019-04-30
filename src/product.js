@@ -1,3 +1,5 @@
+import customizeProduct from './customize-product.js';
+
 //selecting the nodes we want to use
 const roboProduct = document.getElementById('robo-product');
 
@@ -6,6 +8,6 @@ const roboProduct = document.getElementById('robo-product');
 roboProduct.addEventListener('submit', (event) => {
     event.preventDefault();   
     const formData = new FormData(roboProduct);
-    const product = getProduct(formData);
+    const product = customizeProduct(formData);
     console.log(product);
 });
