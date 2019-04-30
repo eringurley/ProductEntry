@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product Entry</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Customize your RoboParent</title>
 </head>
 <body>
-    
+    <main>
+        <form id="robo-customize">
+            <section>
+                <h2>Get Your RoboParent</h2>
+                <div>
+                    <label class="your-name"> Your Name:</label>
+                    <input class="text-input" type="text" id="name" 
+                    placeholder="Your name here" name="name" required>
+                </div>
+            </section>
+            <section>
+                <h2>General Questions</h2>
+                <div>
+                    <label class="washing-dishes">Are you tired of washing the dishes?</label>
+                        <p>
+                            <input type="radio" name="dishes" id="yes" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="dishes" id="no" value="no">
+                            <label for="no">No</label>
+                        </p>
+                </div>
+                <div>
+                        <label class="laundry">Do you enjoy doing laundry?</label>
+                        <p>
+                            <input type="radio" name="enjoy-laundry" id="yes" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="enjoy-laundry" id="no" value="no">
+                            <label for="no">No</label>
+                        </p>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend id="hours-of-sleep">
+                            How many hours of sleep do you generally get?
+                        </legend>
+                        <input type="checkbox" name="wakeup" id="zeroToThree" value="zeroToThree">
+                        <label for="zeroToThree">Between zero and three hours</label>
+                        <input type="checkbox" input="checkbox" name="wakeup" id="fourToSix" value="fourToSix">
+                        <label for="fourToSix">Between four and six hours</label>
+                        <input type="checkbox" input="checkbox" name="wakeup" id="sevenAndUp" value="sevenAndUp">
+                        <label for="sevenAndUp">Seven hours or more. </label>
+
+                    </fieldset>
+                    </div>
+                    <div>
+                        <label class="prefered-activity">Your prefered weekend activity</label>
+                        <select name="favorite-activity">
+                            <option value="" hidden disabled selected>
+                                Choose your activity:
+                            </option>
+                            <option value="grocery-store">
+                                Going to the grocery store
+                            </option>
+                            <option value="meal-prepping">
+                                Meal Prepping
+                            </option>
+                            <option value="cleaning">
+                                Cleaning
+                            </option>
+                            <option value="anything-else">
+                                Literally anything else 
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="chore-help">On a scale, how much would you like to have help with chores so you can spend more time with your children and yourself??</label>
+                        <input type="range" name="chore-help" id="chore-help" min="0" max="5" required>
+                    </div>
+                    <div>
+                        <label class="most-helpful" for="most-helpful">
+                            Now, tell us what you think would be the most helpful thing your bot could help you with?
+                        </label>
+                        <textarea name="most-helpful" id="most-helpful">ex: I have eight loads of laundry a day and would like that to disappear...</textarea>
+                    </div>
+            </section>
+        <section>
+            <h2>
+                Aw yeah, get that perfect bot!
+            </h2>
+            <button id="submit-button">Customize</button>
+        </section>
+        </form>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
 </body>
 </html>
