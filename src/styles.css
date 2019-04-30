@@ -3,7 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     color: rgb(100, 0, 120);
     background-color: rgb(164, 152, 234);
-    text-align: center;
+    margin-left: 100px;
+    display: block;
+}
+
+main{
+    line-height: 40px;
 }
 
 #most-helpful {
@@ -19,3 +24,19 @@ body {
     background-color: rgb(100, 0, 120);
     color: white;
 }
+
+#hours-of-sleep {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#most-helpful{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.most-helpful{
+    float:left;
+}
+
+
