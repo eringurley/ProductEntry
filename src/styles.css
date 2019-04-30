@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
+    background-image: url('./assets/robot-background.jpeg');
     font-family: 'Roboto', sans-serif;
-    color: rgb(100, 0, 120);
-    background-color: rgb(164, 152, 234);
+    font-size: 1.2m;
+    color: rgb(2, 76, 167);
+    background-color: rgb(255, 255, 255);
     margin-left: 50px;
     margin-right: 50px;
     margin-top:50px;
     margin-bottom:50px;
     display: block;
 }
+
+
 #robo-customize{
     background: rgb(165, 231, 240);
     opacity: 80%;
     padding: 30px;
+
+
 }
 main{
     line-height: 40px;
@@ -28,7 +34,7 @@ main{
     height: 50px;
     width: 150px;
     font-size: 1.0em;
-    background-color: rgb(100, 0, 120);
+    background-color: rgb(2, 76, 167);
     color: white;
 }
 
@@ -47,6 +53,10 @@ main{
 
 }
 
-#index-body{
+.index-body{
     text-align:center;
+    background-image: url('robot-background.jpeg');
+    margin-left: -400px;
+    margin-top: 100px;
 }
+
