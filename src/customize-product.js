@@ -1,7 +1,8 @@
-function customizeProduct(formData) {
+function getProduct(formData) {
     //convert data into variables
-    const dishes = formData.get('dishes') === 'yes';
-    const laundry = formData.get('laundry') === 'yes';
+    console.log(formData);
+    const dishes = formData.get('dishes');
+    const laundry = formData.get('laundry');
     const choreHelp = parseInt(formData.get('chore-help'));
     
     //make our object literal
@@ -14,7 +15,8 @@ function customizeProduct(formData) {
         choreHelp: choreHelp,
         mostHelpful: formData.get('most-helpful')
     };
+    console.log(applicant);
     return applicant;
 }
 
-export default customizeProduct;
+export default getProduct;
