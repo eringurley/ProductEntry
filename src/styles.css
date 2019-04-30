@@ -3,10 +3,17 @@ body {
     font-family: 'Roboto', sans-serif;
     color: rgb(100, 0, 120);
     background-color: rgb(164, 152, 234);
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
+    margin-bottom:50px;
     display: block;
 }
-
+#robo-customize{
+    background: rgb(165, 231, 240);
+    opacity: 80%;
+    padding: 30px;
+}
 main{
     line-height: 40px;
 }
