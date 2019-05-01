@@ -9,7 +9,7 @@ test('customize product from form data', (assert) => {
         dishes: 'yes',
         laundry: 'yes',
         wakeup: ['Between four and six hours'],
-        preferedActivity: 'Literally anything else',
+        preferedActivity: 'anything-else',
         choreHelp: 5,
         mostHelpful: 'HALP',
         
