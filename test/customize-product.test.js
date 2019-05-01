@@ -1,4 +1,4 @@
-import getProduct from '../src/customize-product.js';
+import getProduct from '../src/get-product.js';
 const test = QUnit.test;
 
 test('customize product from form data', (assert) => {

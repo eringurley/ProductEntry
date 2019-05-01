@@ -1,11 +1,13 @@
+import customizeBotApi from '../src/customizeBotApi.js';
 const test = QUnit.test;
-import customizeBotApi from '../src/asldkjfsjf.js';
 
-QUnit.module('applicant api');
+QUnit.module('product api');
 
 test('round-trip getProduct api', (assert) => {
     //arrange
-    const customizeBot = { name: 'tester' };
+    const customizeBot = { name: 
+        'tester' 
+    };
 
     //act
     customizeBotApi.save(customizeBot);
