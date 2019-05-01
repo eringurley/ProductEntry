@@ -10,7 +10,7 @@ const mostHelpful = document.getElementById('most-helpful');
 
 const product = customizeBotApi.get();
 
-if(!applicant); {
+if(!product); {
     window.location = './';
 }
 
