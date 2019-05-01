@@ -1,16 +1,17 @@
-const test= = QUnit.test;
+const test = QUnit.test;
+import customizeBotApi from '../src/asldkjfsjf.js';
 
 QUnit.module('applicant api');
 
 test('round-trip getProduct api', (assert) => {
     //arrange
-    const getProduct = {name: 'tester' };
+    const customizeBot = { name: 'tester' };
 
     //act
-    getProductApi.save(product);
-    const result = productApi.get();
+    customizeBotApi.save(customizeBot);
+    const result = customizeBotApi.get();
 
     
     //assert
-    assert.deepEqual(result, product);
+    assert.deepEqual(result, customizeBot);
 });
