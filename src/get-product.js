@@ -1,7 +1,7 @@
 function getProduct(formData) {
     //convert data into variables
     const dishes = formData.get('dishes');
-    const laundry = formData.get('laundry');
+    const laundry = formData.get('enjoy-laundry');
     const choreHelp = parseInt(formData.get('chore-help'));
     
     //make our object literal
@@ -10,7 +10,7 @@ function getProduct(formData) {
         dishes: dishes,
         laundry: laundry,
         wakeup: formData.getAll('wakeup'),
-        preferedActivity: formData.get('preferred-activity'),
+        preferedActivity: formData.get('prefered-activity'),
         choreHelp: choreHelp,
         mostHelpful: formData.get('most-helpful')
     };
@@ -18,3 +18,4 @@ function getProduct(formData) {
 }
 
 export default getProduct;
+

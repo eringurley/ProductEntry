@@ -1,6 +1,6 @@
 import customizeBotApi from './customizeBotApi.js';
 
-const name = document.getElementById('name');
+const name = document.getElementById('your-name');
 const dishes = document.getElementById('dishes');
 const laundry = document.getElementById('laundry');
 const choreHelp = document.getElementById('chore-help');
