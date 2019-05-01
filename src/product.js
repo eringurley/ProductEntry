@@ -9,6 +9,7 @@ const preferredActivity = document.getElementById('preferred-activity');
 const mostHelpful = document.getElementById('most-helpful');
 
 const product = customizeBotApi.get();
+console.log(product);
 
 if(!product); {
     window.location = './';
