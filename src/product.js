@@ -10,9 +10,9 @@ const mostHelpful = document.getElementById('most-helpful');
 
 const product = customizeBotApi.get();
 
-if(!product); {
-    window.location = './';
-}
+// if(!product); {
+//     window.location = './';
+// }
 
 name.textContent = product.name;
 dishes.textContent = product.dishes;

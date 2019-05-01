@@ -10,7 +10,7 @@ function getProduct(formData) {
         dishes: dishes,
         laundry: laundry,
         wakeup: formData.getAll('wakeup'),
-        preferedActivity: formData.get('preferred-activity'),
+        preferredActivity: formData.get('preferred-activity'),
         choreHelp: choreHelp,
         mostHelpful: formData.get('most-helpful')
     };
@@ -18,4 +18,3 @@ function getProduct(formData) {
 }
 
 export default getProduct;
-

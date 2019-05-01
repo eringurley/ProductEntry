@@ -9,7 +9,7 @@ test('customize product from form data', (assert) => {
         dishes: 'yes',
         laundry: 'yes',
         wakeup: ['Between four and six hours'],
-        preferedActivity: 'anything-else',
+        preferredActivity: 'anything-else',
         choreHelp: 5,
         mostHelpful: 'HALP',
         
@@ -20,7 +20,7 @@ test('customize product from form data', (assert) => {
     formData.set('dishes', expected.dishes);
     formData.set('laundry', expected.laundry);
     formData.set('wakeup', expected.wakeup);
-    formData.set('preferred-activity', expected.preferedActivity);
+    formData.set('preferred-activity', expected.preferredActivity);
     formData.set('chore-help', expected.choreHelp);
     formData.set('most-helpful', expected.mostHelpful);
 
