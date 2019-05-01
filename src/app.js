@@ -1,10 +1,12 @@
-import get-product from './customize-product.js';
-import customize-api from './customizeBotApi.js';
+import getProduct from './customize-product.js';
+import customizeBotApi from './customizeBotApi.js';
 
 const roboProduct = document.getElementById('robo-product');
 
 roboProduct.addEventListener('submit', (event) => {
     event.preventDefault();   
+    const formData = new FormData(getProduct);
+    const product = getProduct(formData);
     
-    console.log('hello');
+    customizeBotApi.save(product);
 });
