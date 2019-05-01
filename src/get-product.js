@@ -1,6 +1,5 @@
 function getProduct(formData) {
     //convert data into variables
-    console.log(formData);
     const dishes = formData.get('dishes');
     const laundry = formData.get('laundry');
     const choreHelp = parseInt(formData.get('chore-help'));
@@ -15,7 +14,6 @@ function getProduct(formData) {
         choreHelp: choreHelp,
         mostHelpful: formData.get('most-helpful')
     };
-    console.log(applicant);
     return applicant;
 }
 

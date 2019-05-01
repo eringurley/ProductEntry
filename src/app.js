@@ -1,4 +1,5 @@
-//import customizeProduct from './customize-product.js';
+import get-product from './customize-product.js';
+import customize-api from './customizeBotApi.js';
 
 const roboProduct = document.getElementById('robo-product');
 
