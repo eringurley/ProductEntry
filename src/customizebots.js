@@ -4,7 +4,7 @@ const tbody = document.getElementById('customizedBots');
 
 const customizeBots = customizeBotApi.getAll();
 
-for(let i = 0; i < customizeBots.length;i++) {
+for(let i = 0; i < customizeBots.length; i++) {
     const customizeBot = customizeBots[i];
 
     const tr = document.createElement('tr');
