@@ -4,10 +4,9 @@ const test = QUnit.test;
 QUnit.module('product api');
 
 test('round-trip getProduct api', (assert) => {
+    localStorage.removeItem('customizeBots');
     //arrange
-    const customizeBot = { name: 
-        'tester' 
-    };
+    const customizeBot = { name: 'tester' };
 
     //act
     customizeBotApi.save(customizeBot);
@@ -19,10 +18,30 @@ test('round-trip getProduct api', (assert) => {
 });
 
 test('no applicants in empty local storage return empty arry', assert => {
-    localStorage.removeItem('');
     const expected = [];
 
     const customizeBots = customizeBotApi.getAll();
 
     assert.deepEqual(customizeBots, expected);
 });
+
+test('two saves return array with two items', (assert) => {
+    localStorage.removeItem('applicants');
+    //arrange
+    const customizeBot1 = { name: 'tester1' };
+    const customizeBot2 = { name: 'tester2' };
+    const expected = [applicant1, applicant2];
+    
+    customizeBotApi.save(customizeBot1);
+    customizeBotApi.save(customizeBot2);
+
+    //act
+    const customizeBots =customizeBotApi.getAll();
+    
+    //assert
+    assert.deepEqual(customizeBots,expected);
+
+
+});
+
+export default customizeBotApi;

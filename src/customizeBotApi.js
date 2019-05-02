@@ -21,5 +21,3 @@ const customizeBotApi = {
     }
 };
 
-
-export default customizeBotApi;
