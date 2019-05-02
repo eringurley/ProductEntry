@@ -1,4 +1,5 @@
 const customizeBotApi = {
+    storage:localStorage,
     save(customizeBot) {
         //create array with applicant
         const customizeBots = customizeBotApi.getAll();
@@ -7,7 +8,7 @@ const customizeBotApi = {
         //serialize to json
         const json = JSON.stringify(customizeBots);
         //save to local storage
-        localStorage.setItem('customizeBots', json);
+        customizeBotApi.Storage.setItem('customizeBots', json);
     },
     get() {
         //use getAll to fetch customizeBots
@@ -16,7 +17,7 @@ const customizeBotApi = {
         return customizeBots[0];
     }, 
     getAll() {
-        //get from local storage
+        //get from customizeBotApi. storage
         const json = localStorage.getItem(customizeBots);
         //deserialize to object
         let customizeBots = JSON.parse(json);
