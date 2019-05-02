@@ -47,4 +47,4 @@ test('two saves return array with two items', (assert) => {
 
 });
 
-export default customizeBots;
+export default customizeBotApi;

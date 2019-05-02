@@ -3,7 +3,7 @@ const tbody = getElementById('customizeBots');
 
 const customizeBots = customizeBotApi.getAll();
 
-for(let i = 0; i < customizeBots.lent;i++) {
+for(let i = 0; i < customizeBots.length;i++) {
     const customizeBot = customizeBots[i];
 
     const tr = document.createElement('tr');
