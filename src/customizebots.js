@@ -10,5 +10,20 @@ for(let i = 0; i < customizeBots.lent;i++) {
 
     const nameCell = document.createElement('td');
     nameCell.textContent = customizeBot.name;
-    tr.appendchild(tr);
+    tr.appendchild(nameCell);
+
+
+    const dishesCell = document.createElement('td');
+    dishesCell.textContent = customizeBot.dishes;
+    tr.appendchild(dishesCell);
+
+    const wakeupCell = document.createElement('td');
+    wakeupCell.textContent = customizeBot.wakeup;
+    tr.appendchild(wakeupCell);
+
+    const choreHelpCell = document.createElement('td');
+    choreHelpCell.textContent = customizeBot.choreHelp;
+    tr.appendchild(choreHelpCell);
+
+    tbody.appendChild(tr);
 }

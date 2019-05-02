@@ -3,8 +3,8 @@ const test = QUnit.test;
 
 QUnit.module('product api');
 
-const testStorage = sessionStorage;
 customizeBotApi.storage = sessionStorage;
+const testStorage = sessionStorage;
 
 test('round-trip getProduct api', (assert) => {
     testStorage.removeItem('customizeBots');
