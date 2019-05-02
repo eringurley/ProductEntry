@@ -1,17 +1,13 @@
 import customizeBotApi from './customizeBotApi.js';
 
 const tbody = document.getElementById('customizedBots');
-console.log(tbody);
 
 const customizeBots = customizeBotApi.getAll();
 
 for(let i = 0; i < customizeBots.length;i++) {
     const customizeBot = customizeBots[i];
-    console.log(customizeBot);
 
     const tr = document.createElement('tr');
-    console.log(tr);
-
     const nameCell = document.createElement('td');
     nameCell.textContent = customizeBot.name;
     tr.appendChild(nameCell);
@@ -27,7 +23,14 @@ for(let i = 0; i < customizeBots.length;i++) {
     const choreHelpCell = document.createElement('td');
     choreHelpCell.textContent = customizeBot.choreHelp;
     tr.appendChild(choreHelpCell);
-    console.log(tr)
+
+    const preferredActivityCell = document.createElement('td');
+    preferredActivityCell.textContent = customizeBot.preferredActivity;
+    tr.appendChild(preferredActivityCell);
+
+    const mostHelpfulCell = document.createElement('td');
+    mostHelpfulCell.textContent = customizeBot.mostHelpful;
+    tr.appendChild(mostHelpfulCell);
 
     tbody.appendChild(tr);
 }
