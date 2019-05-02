@@ -3,8 +3,11 @@ const test = QUnit.test;
 
 QUnit.module('product api');
 
+const testStorage = sessionStorage;
+customizeBotApi.storage = sessionStorage;
+
 test('round-trip getProduct api', (assert) => {
-    localStorage.removeItem('customizeBots');
+    testStorage.removeItem('customizeBots');
     //arrange
     const customizeBot = { name: 'tester' };
 
@@ -26,7 +29,7 @@ test('no applicants in empty local storage return empty arry', assert => {
 });
 
 test('two saves return array with two items', (assert) => {
-    localStorage.removeItem('applicants');
+    testStorage.removeItem('applicants');
     //arrange
     const customizeBot1 = { name: 'tester1' };
     const customizeBot2 = { name: 'tester2' };
