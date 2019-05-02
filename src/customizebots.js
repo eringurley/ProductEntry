@@ -1,4 +1,5 @@
 import customizeBotApi from './customizeBotApi.js';
+
 const tbody = getElementById('customizeBots');
 
 const customizeBots = customizeBotApi.getAll();
@@ -11,7 +12,6 @@ for(let i = 0; i < customizeBots.length;i++) {
     const nameCell = document.createElement('td');
     nameCell.textContent = customizeBot.name;
     tr.appendchild(nameCell);
-
 
     const dishesCell = document.createElement('td');
     dishesCell.textContent = customizeBot.dishes;
