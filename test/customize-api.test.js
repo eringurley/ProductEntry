@@ -36,10 +36,10 @@ test('two saves return array with two items', (assert) => {
     customizeBotApi.save(customizeBot2);
 
     //act
-    const customizeBots =customizeBotApi.getAll();
+    const customizeBots = customizeBotApi.getAll();
     
     //assert
-    assert.deepEqual(customizeBots,expected);
+    assert.deepEqual(customizeBots, expected);
 
 
 });
