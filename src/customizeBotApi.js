@@ -1,7 +1,7 @@
 const customizeBotApi = {
     storage:localStorage,
     save(customizeBot) {
-        //create array with applicant
+        //create array with customizeBots
         const customizeBots = customizeBotApi.getAll();
         //add this customizeBots to array
         customizeBots.push(customizeBot);

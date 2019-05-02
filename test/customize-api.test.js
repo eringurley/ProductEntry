@@ -29,11 +29,11 @@ test('no applicants in empty local storage return empty arry', assert => {
 });
 
 test('two saves return array with two items', (assert) => {
-    testStorage.removeItem('applicants');
+    testStorage.removeItem('customizeBots');
     //arrange
     const customizeBot1 = { name: 'tester1' };
     const customizeBot2 = { name: 'tester2' };
-    const expected = [applicant1, applicant2];
+    const expected = [customizeBot1, customizeBot2];
     
     customizeBotApi.save(customizeBot1);
     customizeBotApi.save(customizeBot2);
@@ -47,4 +47,4 @@ test('two saves return array with two items', (assert) => {
 
 });
 
-export default customize-app.test.js;
+export default customizeBots;

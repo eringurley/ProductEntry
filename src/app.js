@@ -8,5 +8,5 @@ roboProduct.addEventListener('submit', (event) => {
     const formData = new FormData(roboProduct);
     const product = getProduct(formData);
     
-    customizeBotApi.save(product);
+    customizeBotApi.save(getProduct);
 });
