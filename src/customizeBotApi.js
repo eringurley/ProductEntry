@@ -24,7 +24,6 @@ const customizeBotApi = {
         if(!customizeBots) {
             customizeBots = [];
         }
-
         return customizeBots;
     }
 };
