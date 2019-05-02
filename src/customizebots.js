@@ -1,6 +1,6 @@
 import customizeBotApi from './customizeBotApi.js';
 
-const tbody = getElementById('customizeBots');
+const tbody = document.getElementById('customizeBots');
 
 const customizeBots = customizeBotApi.getAll();
 

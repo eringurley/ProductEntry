@@ -21,6 +21,7 @@ test('round-trip getProduct api', (assert) => {
 });
 
 test('no applicants in empty local storage return empty arry', assert => {
+    testStorage.removeItem('customizeBots');
     const expected = [];
 
     const customizeBots = customizeBotApi.getAll();
