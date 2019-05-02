@@ -9,4 +9,10 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     
     customizeBotApi.save(getProduct(formData));
+
+    const customizeBot = getProduct (formData);
+    customizeBotApi.save(customizeBot);
+    window.location = 'thankyou.html';
 });
+
+
