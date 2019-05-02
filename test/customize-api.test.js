@@ -17,3 +17,12 @@ test('round-trip getProduct api', (assert) => {
     //assert
     assert.deepEqual(result, customizeBot);
 });
+
+test('no applicants in empty local storage return empty arry', assert => {
+    localStorage.removeItem('');
+    const expected = [];
+
+    const customizeBots = customizeBotApi.getAll();
+
+    assert.deepEqual(customizeBots, expected);
+});

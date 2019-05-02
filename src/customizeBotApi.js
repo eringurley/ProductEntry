@@ -11,13 +11,15 @@ const customizeBotApi = {
     get() {
         //get from local storage
         const json = localStorage.getItem('customizeBots');
-        console.log(json);
         // deserialize to object
         const customizeBot = JSON.parse(json);
-        console.log(customizeBot);
         //return it
-        return customizeBot[0];
+        return customizeBots[0];
+    }, 
+    getAll() {
+        return [];
     }
 };
+
 
 export default customizeBotApi;
