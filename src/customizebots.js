@@ -22,7 +22,7 @@ for(let i = 0; i < customizeBots.length; i++) {
 
     //use the formatted search string as the end of the link href
     //needs to link to list page ('product.html?')
-    link.href = 'product.html?' + searchParams.toString();
+    link.href = 'product-detail.html?' + searchParams.toString();
 
     //also use the applicant's name as the display text for the link
     link.textContent = customizeBot.name;

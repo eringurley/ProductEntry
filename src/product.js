@@ -17,9 +17,9 @@ const id = searchParams.get('name');
 //get our applicant data from the api
 const product = customizeBotApi.get(id);
 
-if(!product); {
-    window.location = './';
-}
+//if(!product); {
+//    window.location = './';
+//}
 
 //mediate data into the elements
 name.textContent = product.name;
