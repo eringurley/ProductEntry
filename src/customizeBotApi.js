@@ -10,9 +10,17 @@ const customizeBotApi = {
         //save to local storage
         customizeBotApi.storage.setItem('customizeBots', json);
     },
-    get() {
+    get(name) {
         //use getAll to fetch customizeBots
         const customizeBots = customizeBotApi.getAll();
+        //return
+        for(let i =0; i < customizeBots.length; i++) {
+            const customizeBot = customizeBots[i]
+            if(customizeBot.name === name) {
+                return customizeBot;
+            }
+        }
+        
         //return it
         return customizeBots[0];
     }, 
