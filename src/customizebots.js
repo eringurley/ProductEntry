@@ -31,6 +31,6 @@ for(let i = 0; i < customizeBots.length; i++) {
     const mostHelpfulCell = document.createElement('td');
     mostHelpfulCell.textContent = customizeBot.mostHelpful;
     tr.appendChild(mostHelpfulCell);
-
+    console.log(mostHelpfulCell);
     tbody.appendChild(tr);
 }
