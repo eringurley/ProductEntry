@@ -6,18 +6,20 @@ QUnit.module('product api');
 customizeBotApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
-test('round-trip getProduct api', (assert) => {
+test('creates customizeBot api test', (assert) => {
     testStorage.removeItem('customizeBots');
     //arrange
-    const customizeBot = { name: 'tester' };
+    const customizeBot1 = { name: 'tester' };
+    const customizeBot2 = { name: 'tester' };
 
     //act
-    customizeBotApi.save(customizeBot);
-    const result = customizeBotApi.get();
+    customizeBotApi.save(customizeBot1);
+    customizeBotApi.save(customizeBot2);
 
-    
+    const result = customizeBotApi.get(customizeBot2.name);
+
     //assert
-    assert.deepEqual(result, customizeBot);
+    assert.deepEqual(result, customizeBot2);
 });
 
 test('no applicants in empty local storage return empty arry', assert => {
