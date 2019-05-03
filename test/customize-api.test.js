@@ -6,7 +6,7 @@ QUnit.module('product api');
 customizeBotApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
-test('creates customizeBot api test', (assert) => {
+test('creates customizeBot api test for two customizeBots', (assert) => {
     testStorage.removeItem('customizeBots');
     //arrange
     const customizeBot1 = { name: 'tester' };
@@ -50,4 +50,3 @@ test('two saves return array with two items', (assert) => {
 
 });
 
-export default customizeBotApi;
